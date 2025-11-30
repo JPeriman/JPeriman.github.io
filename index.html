@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Safety Using Public WiFi</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="logo">🛜</span>
+      <h1>Safety Using Public WiFi</h1>
+    </div>
+    <nav>
+      <button data-scroll="#home">Home</button>
+      <button data-scroll="#learn">Learn</button>
+      <button data-scroll="#quiz">Quiz</button>
+      <button data-scroll="#resources">Resources</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="panel hero">
+      <div class="hero-inner">
+        <h2>Protect yourself on public Wi-Fi</h2>
+        <p>Short, practical tips and a fun scenarios quiz to test your skills.</p>
+        <div class="cta">
+          <a class="btn" href="#learn">Start Learning</a>
+          <a class="btn outline" href="#quiz">Take the Quiz</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="learn" class="panel">
+      <h2>Quick tips</h2>
+      <div class="tips-grid">
+        <div class="tip">
+          <h3>Use a VPN</h3>
+          <p class="reveal">A VPN encrypts your traffic so snoopers can't read it. Use a reputable paid or university VPN when possible.</p>
+        </div>
+        <div class="tip">
+          <h3>Check the network name</h3>
+          <p class="reveal">Confirm the SSID with staff. Attackers create "evil twin" hotspots with similar names.</p>
+        </div>
+        <div class="tip">
+          <h3>Use HTTPS</h3>
+          <p class="reveal">Look for the lock icon in the address bar. Avoid entering passwords on non-HTTPS pages.</p>
+        </div>
+        <div class="tip">
+          <h3>Disable auto-join</h3>
+          <p class="reveal">Turn off auto-connecting to open networks to avoid accidentally joining malicious networks.</p>
+        </div>
+        <div class="tip">
+          <h3>Forget networks</h3>
+          <p class="reveal">After you leave, forget the network so your device won't auto-reconnect later.</p>
+        </div>
+        <div class="tip">
+          <h3>Use mobile data for sensitive tasks</h3>
+          <p class="reveal">If you are banking or shopping using your phone, use cellular data or use your phone as a hotspot.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="quiz" class="panel">
+      <h2>Scenarios Quizzes</h2>
+      <p class="muted">10 scenarios with instant feedback. Get all 10 correct to earn yourself the "Cyber Detective" ️title!</p>
+
+      <div id="quiz-area">
+        <div id="question-card" class="card hidden">
+          <div class="q-header">
+            <span id="q-num"></span>
+            <progress id="q-progress" value="0" max="10"></progress>
+          </div>
+          <h3 id="q-text"></h3>
+          <ul id="options" class="options"></ul>
+          <div id="feedback" class="feedback"></div>
+          <div class="card-actions">
+            <button id="next-btn" class="btn" disabled>Next</button>
+          </div>
+        </div>
+
+        <div id="start-card" class="card">
+          <p>Ready to test your public Wi-Fi smarts?</p>
+          <div class="card-actions">
+            <button id="start-btn" class="btn">Start Scenarios w/ Quizzes</button>
+          </div>
+        </div>
+
+        <div id="result-card" class="card hidden">
+          <h3>Your score: <span id="score"></span>/10</h3>
+          <p id="badge" class="badge"></p>
+          <div id="result-details"></div>
+          <div class="card-actions">
+            <button id="retry-btn" class="btn outline">Play Again</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="panel">
+      <h2>Resources & References</h2>
+      <ul>
+        <li><a href="https://watech.wa.gov/tips-safely-using-public-wi-fi">WaTech Wifi Safety Tips</a></li>
+        <li><a href="https://us.norton.com/blog/privacy/public-wifi">Norton Public Wi-Fi Safety Guide</a></li>
+        <li><a href="https://www.verizon.com/home/internet/guides/5-essential-tips-for-using-public-wi-fi-securely/">Verizons Public Wi-Fi Security Tips</a></li>
+      </ul>
+      <p class="muted small">This site is for education purposes only.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Created for final project • Topic: Safe use of public Wi-Fi</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
