@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safety Using Public WiFi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="brand">
+      <span class="logo">🛜</span>
+      <h1>Safety Using Public WiFi</h1>
+    </div>
+
+    <!-- Simple nav buttons -->
+    <nav>
+      <button data-scroll="#home">Home</button>
+      <button data-scroll="#learn">Learn</button>
+      <button data-scroll="#quiz">Quiz</button>
+      <button data-scroll="#resources">Resources</button>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main>
+
+    <!-- Home section -->
+    <section id="home" class="panel hero">
+      <div class="hero-inner">
+        <h2>Protect yourself on public Wi-Fi</h2>
+        <p>Learn quick tips and take a short quiz to test what you know.</p>
+
+        <div class="cta">
+          <a href="#learn" class="btn">Start Learning</a>
+          <a href="#quiz" class="btn outline">Take the Quiz</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learning section -->
+    <section id="learn" class="panel">
+      <h2>Quick Tips</h2>
+
+      <div class="tips-grid">
+
+        <div class="tip">
+          <h3>Use a VPN</h3>
+          <p class="reveal">A VPN encrypts your traffic so others can't read it.</p>
+        </div>
+
+        <div class="tip">
+          <h3>Check the network name</h3>
+          <p class="reveal">Always confirm the SSID with staff to avoid fake hotspots.</p>
+        </div>
+
+        <div class="tip">
+          <h3>Use HTTPS</h3>
+          <p class="reveal">Look for the lock icon. Never enter passwords on HTTP pages.</p>
+        </div>
+
+        <div class="tip">
+          <h3>Disable auto-join</h3>
+          <p class="reveal">Turn off auto-join so your device doesn't connect on its own.</p>
+        </div>
+
+        <div class="tip">
+          <h3>Forget networks</h3>
+          <p class="reveal">Forget networks when you leave so your device won’t reconnect.</p>
+        </div>
+
+        <div class="tip">
+          <h3>Use mobile data</h3>
+          <p class="reveal">For banking or personal things, use cellular data instead.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Quiz section -->
+    <section id="quiz" class="panel">
+      <h2>Scenarios Quiz</h2>
+      <p class="muted">Ten short scenarios with instant feedback.</p>
+
+      <div id="quiz-area">
+
+        <!-- Start screen -->
+        <div id="start-card" class="card">
+          <p>Ready to try the quiz?</p>
+          <div class="card-actions">
+            <button id="start-btn" class="btn">Start Quiz</button>
+          </div>
+        </div>
+
+        <!-- Question card -->
+        <div id="question-card" class="card hidden">
+          <div class="q-header">
+            <span id="q-num"></span>
+            <progress id="q-progress" value="0" max="10"></progress>
+          </div>
+
+          <h3 id="q-text"></h3>
+          <ul id="options" class="options"></ul>
+
+          <div id="feedback" class="feedback"></div>
+
+          <div class="card-actions">
+            <button id="next-btn" class="btn" disabled>Next</button>
+          </div>
+        </div>
+
+        <!-- Results -->
+        <div id="result-card" class="card hidden">
+          <h3>Your score: <span id="score"></span>/10</h3>
+          <p id="badge" class="badge"></p>
+          <div id="result-details"></div>
+
+          <div class="card-actions">
+            <button id="retry-btn" class="btn outline">Play Again</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Resources section -->
+    <section id="resources" class="panel">
+      <h2>Resources & References</h2>
+
+      <ul>
+        <li><a href="https://watech.wa.gov/tips-safely-using-public-wi-fi">WaTech Wi-Fi Safety Tips</a></li>
+        <li><a href="https://us.norton.com/blog/privacy/public-wifi">Norton Public Wi-Fi Guide</a></li>
+        <li><a href="https://www.verizon.com/home/internet/guides/5-essential-tips-for-using-public-wi-fi-securely/">Verizon Wi-Fi Tips</a></li>
+      </ul>
+
+      <p class="muted small">This site is for educational purposes only.</p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <small>Created for final project • Safe use of public Wi-Fi</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
